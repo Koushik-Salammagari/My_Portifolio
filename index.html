@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Koushik Salammagari</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class="logo">Koushik Salammagari</div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+
+    </nav>
+    <section id = "profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="John Doe profile picture">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title">Koushik Salammagari</h1>
+            <p class="section__text__p2">Software Developer </p>
+            <div class="btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./assets/my_cv.pdf')">
+                Download_CV</button>
+                <button class = "btn btn-color-1" onclick="location.href ='./#contact'">
+                Contact_Info</button>
+            </div>
+            <div id = "social-container">
+                <img src="./assets/linkedin.png" alt = "My linkedin profile" class="icon" onclick="location.href='https: //linkedin.com/'"/>
+                <img src="./assets/github.png" alt = "My github profile" class="icon" onclick="location.href='https: //github.com/'"/>
+            </div>
+        </div>
+
+    </section>
+    <section id = "about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class=" section-container">
+            <div class = "section__pic-container">
+                <img src = "./assets/about-pic.png"
+                 alt="Profile picture"
+                 class=" about-pic"/>
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon"
+                        class="icon"/>
+
+                        <h3> Experience</h3>
+                        <p> 2+ years <br /> Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon"
+                        class="icon"/>
+
+                        <h3> Education</h3>
+                        <p> BTech in Computer Science <br /> Masters in computer science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+
+                    <p>
+                        Experienced in developing innovative AI solutions and leveraging advanced technologies to solve complex challenges, I am passionate about creating impactful applications in machine learning and natural language processing (NLP).
+
+Projects Highlights:
+-Developed an NLP-based fake news classifier achieving top accuracies of 99.96%, highlighting potential in critical information verification.
+-Engineered a custom medical chatbot using Langchain and ChatGPT API, significantly enhancing response capabilities for medical inquiries.
+-Utilized existing CNN architectures like ResNet and MobileNetV2, achieving significant accuracy improvements in image recognition tasks.
+-Utilizing a Raspberry Pi, a voice-activated smart assistant was created that can comprehend complicated intents and recognize voice commands with accuracy. 
+-Developed a classic Tic Tac Toe game using Q-learning to create an intelligent agent that enhances gameplay through reinforcement learning.
+-Optimized reinforcement learning parameters for controlling a robotic arm, demonstrating expertise in robotics and AI.
+
+Technologies:
+-NLP (GloVe, BERT), CNN (ResNet, MobileNetV2), TensorFlow, PyTorch
+-Langchain, ChatGPT API, OpenAI Embeddings, Hugging Face’s Instruct embeddings
+-Python (3.9), NumPy, Matplotlib, Google Colab, Raspberry Pi, Arduino
+
+Achievements:
+-Successfully integrated AI models across multiple projects, achieving high accuracy and efficiency.
+-Demonstrated leadership as Technical Head in organizing technical events and managing complex projects.
+
+                    </p>
+                </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience' "/>
+
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
